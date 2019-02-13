@@ -1,0 +1,18 @@
+// ControleCalc	
+	public static void montaExpressao(){
+		System.out.println("=====>>> operando: "+operando);
+		expressao.append(operacao);
+		System.out.println("=====>>> expressao: "+expressao);
+		operando = new StringBuffer("");
+	}
+
+// Calculadora
+		case "/":
+		case "=": 
+			ControleCalc.setOperacao(key);
+			System.out.println("Operação: "+ ControleCalc.getOperacao());
+			ControleCalc.montaExpressao();
+			System.out.println("Expressao: "+ControleCalc.getExpressao());
+			textField_Texto.setText("");
+			break;		
+		default:

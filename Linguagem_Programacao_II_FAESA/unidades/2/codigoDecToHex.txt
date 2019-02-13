@@ -1,0 +1,19 @@
+
+
+public class Teste {
+	public static void main(String[] args) {
+		double a = 0xA;
+		double b = 0xB;
+		Double s = a + b;
+		System.out.println("res_1 = "+s);
+		System.out.println("res_2 = "+s.toHexString(s));
+		
+		int i = 21;
+		String hex = Integer.toHexString(i);
+		System.out.println("Hex value is " + hex);
+		
+		String hexNumber = "A";
+		int decimal = Integer.parseInt(hexNumber, 16);
+		System.out.println("Decimal value is " + decimal);
+	}
+}
